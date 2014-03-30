@@ -1,0 +1,112 @@
+2014-03-29 17:02:13,565 (catalina-startup-0) [            UtilXml.java:1060:ERROR] XmlFileLoader: File file:////home/ryan/Downloads/apache-ofbiz-12.04.02/specialpurpose/ecommerce/webapp/ecommerce/WEB-INF/web.xml process error. Line: 165. Error message: The content of element type "web-app" must match "(icon?,display-name?,description?,distributable?,context-param*,filter*,filter-mapping*,listener*,servlet*,servlet-mapping*,session-config?,mime-mapping*,welcome-file-list?,error-page*,taglib*,resource-env-ref*,resource-ref*,security-constraint*,login-config?,security-role*,env-entry*,ejb-ref*,ejb-local-ref*)".
+2014-03-29 17:02:36,686 (default-invoker-Thread-16) [   GenericDelegator.java:1723:ERROR] 
+---- exception report ----------------------------------------------------------
+ERROR: Cannot do a find that returns an EntityListIterator with no transaction in place. Wrap this call in a transaction.
+Exception: java.lang.Exception
+Message: Stack Trace
+---- stack trace ---------------------------------------------------------------
+java.lang.Exception: Stack Trace
+org.ofbiz.entity.GenericDelegator.find(GenericDelegator.java:1722)
+org.ofbiz.order.order.OrderServices$1.call(OrderServices.java:5628)
+org.ofbiz.order.order.OrderServices$1.call(OrderServices.java:5623)
+org.ofbiz.entity.transaction.TransactionUtil$NoTransaction.call(TransactionUtil.java:979)
+org.ofbiz.entity.transaction.TransactionUtil$InTransaction.call(TransactionUtil.java:1004)
+org.ofbiz.entity.transaction.TransactionUtil.doNewTransaction(TransactionUtil.java:90)
+org.ofbiz.order.order.OrderServices.createAlsoBoughtProductAssocs(OrderServices.java:5623)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+org.ofbiz.service.engine.StandardJavaEngine.serviceInvoker(StandardJavaEngine.java:100)
+org.ofbiz.service.engine.StandardJavaEngine.runSync(StandardJavaEngine.java:57)
+org.ofbiz.service.ServiceDispatcher.runSync(ServiceDispatcher.java:390)
+org.ofbiz.service.ServiceDispatcher.runSync(ServiceDispatcher.java:225)
+org.ofbiz.service.GenericDispatcher.runSync(GenericDispatcher.java:163)
+org.ofbiz.service.job.GenericServiceJob.exec(GenericServiceJob.java:71)
+org.ofbiz.service.job.JobInvoker.run(JobInvoker.java:242)
+java.lang.Thread.run(Thread.java:744)
+--------------------------------------------------------------------------------
+
+2014-03-29 17:02:40,989 (default-invoker-Thread-16) [            UtilXml.java:1060:ERROR] XmlFileLoader: File file:/home/ryan/Downloads/apache-ofbiz-12.04.02/applications/accounting/script/org/ofbiz/accounting/invoice/InvoiceServices.xml process error. Line: 77. Error message: cvc-pattern-valid: Value 'invoiceSequence-enforced' is not facet-valid with respect to pattern '[a-zA-Z_]{1}[a-zA-Z0-9_$.]+' for type 'javaClassName'.
+2014-03-29 17:02:40,990 (default-invoker-Thread-16) [            UtilXml.java:1060:ERROR] XmlFileLoader: File file:/home/ryan/Downloads/apache-ofbiz-12.04.02/applications/accounting/script/org/ofbiz/accounting/invoice/InvoiceServices.xml process error. Line: 77. Error message: cvc-attribute.3: The value 'invoiceSequence-enforced' of attribute 'method-name' on element 'simple-method' is not valid with respect to its type, 'javaClassName'.
+2014-03-29 17:02:40,990 (default-invoker-Thread-16) [            UtilXml.java:1060:ERROR] XmlFileLoader: File file:/home/ryan/Downloads/apache-ofbiz-12.04.02/applications/accounting/script/org/ofbiz/accounting/invoice/InvoiceServices.xml process error. Line: 96. Error message: cvc-pattern-valid: Value 'invoiceSequence-restart' is not facet-valid with respect to pattern '[a-zA-Z_]{1}[a-zA-Z0-9_$.]+' for type 'javaClassName'.
+2014-03-29 17:02:40,990 (default-invoker-Thread-16) [            UtilXml.java:1060:ERROR] XmlFileLoader: File file:/home/ryan/Downloads/apache-ofbiz-12.04.02/applications/accounting/script/org/ofbiz/accounting/invoice/InvoiceServices.xml process error. Line: 96. Error message: cvc-attribute.3: The value 'invoiceSequence-restart' of attribute 'method-name' on element 'simple-method' is not valid with respect to its type, 'javaClassName'.
+2014-03-29 17:35:51,057 (Finalizer) [ EntityListIterator.java:546:ERROR] 
+---- runtime exception report --------------------------------------------------
+Error closing the SQLProcessor in finalize EntityListIterator
+Exception: java.lang.NullPointerException
+Message: null
+---- stack trace ---------------------------------------------------------------
+java.lang.NullPointerException
+org.apache.commons.dbcp.managed.ManagedConnection.close(ManagedConnection.java:147)
+org.ofbiz.entity.jdbc.SQLProcessor.close(SQLProcessor.java:225)
+org.ofbiz.entity.util.EntityListIterator.close(EntityListIterator.java:155)
+org.ofbiz.entity.util.EntityListIterator.finalize(EntityListIterator.java:542)
+java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+java.lang.ref.Finalizer.runFinalizer(Finalizer.java:101)
+java.lang.ref.Finalizer.access$100(Finalizer.java:32)
+java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:190)
+--------------------------------------------------------------------------------
+
+2014-03-29 17:35:51,066 (Finalizer) [ EntityListIterator.java:546:ERROR] 
+---- runtime exception report --------------------------------------------------
+Error closing the SQLProcessor in finalize EntityListIterator
+Exception: java.lang.NullPointerException
+Message: null
+---- stack trace ---------------------------------------------------------------
+java.lang.NullPointerException
+org.apache.commons.dbcp.managed.ManagedConnection.close(ManagedConnection.java:147)
+org.ofbiz.entity.jdbc.SQLProcessor.close(SQLProcessor.java:225)
+org.ofbiz.entity.util.EntityListIterator.close(EntityListIterator.java:155)
+org.ofbiz.entity.util.EntityListIterator.finalize(EntityListIterator.java:542)
+java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+java.lang.ref.Finalizer.runFinalizer(Finalizer.java:101)
+java.lang.ref.Finalizer.access$100(Finalizer.java:32)
+java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:190)
+--------------------------------------------------------------------------------
+
+2014-03-29 17:37:13,343 (Finalizer) [ EntityListIterator.java:546:ERROR] 
+---- runtime exception report --------------------------------------------------
+Error closing the SQLProcessor in finalize EntityListIterator
+Exception: java.lang.NullPointerException
+Message: null
+---- stack trace ---------------------------------------------------------------
+java.lang.NullPointerException
+org.apache.commons.dbcp.managed.ManagedConnection.close(ManagedConnection.java:147)
+org.ofbiz.entity.jdbc.SQLProcessor.close(SQLProcessor.java:225)
+org.ofbiz.entity.util.EntityListIterator.close(EntityListIterator.java:155)
+org.ofbiz.entity.util.EntityListIterator.finalize(EntityListIterator.java:542)
+java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+java.lang.ref.Finalizer.runFinalizer(Finalizer.java:101)
+java.lang.ref.Finalizer.access$100(Finalizer.java:32)
+java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:190)
+--------------------------------------------------------------------------------
+
+2014-03-30 00:04:46,923 (default-invoker-Thread-20) [   GenericDelegator.java:1723:ERROR] 
+---- exception report ----------------------------------------------------------
+ERROR: Cannot do a find that returns an EntityListIterator with no transaction in place. Wrap this call in a transaction.
+Exception: java.lang.Exception
+Message: Stack Trace
+---- stack trace ---------------------------------------------------------------
+java.lang.Exception: Stack Trace
+org.ofbiz.entity.GenericDelegator.find(GenericDelegator.java:1722)
+org.ofbiz.order.order.OrderServices$1.call(OrderServices.java:5628)
+org.ofbiz.order.order.OrderServices$1.call(OrderServices.java:5623)
+org.ofbiz.entity.transaction.TransactionUtil$NoTransaction.call(TransactionUtil.java:979)
+org.ofbiz.entity.transaction.TransactionUtil$InTransaction.call(TransactionUtil.java:1004)
+org.ofbiz.entity.transaction.TransactionUtil.doNewTransaction(TransactionUtil.java:90)
+org.ofbiz.order.order.OrderServices.createAlsoBoughtProductAssocs(OrderServices.java:5623)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+org.ofbiz.service.engine.StandardJavaEngine.serviceInvoker(StandardJavaEngine.java:100)
+org.ofbiz.service.engine.StandardJavaEngine.runSync(StandardJavaEngine.java:57)
+org.ofbiz.service.ServiceDispatcher.runSync(ServiceDispatcher.java:390)
+org.ofbiz.service.ServiceDispatcher.runSync(ServiceDispatcher.java:225)
+org.ofbiz.service.GenericDispatcher.runSync(GenericDispatcher.java:163)
+org.ofbiz.service.job.GenericServiceJob.exec(GenericServiceJob.java:71)
+org.ofbiz.service.job.JobInvoker.run(JobInvoker.java:242)
+java.lang.Thread.run(Thread.java:744)
+--------------------------------------------------------------------------------
+

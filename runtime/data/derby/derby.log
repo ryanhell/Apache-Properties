@@ -1,0 +1,30 @@
+----------------------------------------------------------------
+Sat Mar 29 17:01:44 PDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0145-104a-b9ab-ffffa94ec81a 
+on database directory /home/ryan/Downloads/apache-ofbiz-12.04.02/runtime/data/derby/ofbiz  with class loader org.ofbiz.base.start.Classpath$NativeLibClassLoader@1cd0798 
+Loaded from file:/home/ryan/Downloads/apache-ofbiz-12.04.02/framework/entity/lib/jdbc/derby-10.8.2.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_51-b13
+user.dir=/home/ryan/Downloads/apache-ofbiz-12.04.02
+derby.system.home=runtime/data/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Mar 29 17:01:59 PDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance be008375-0145-104a-b9ab-ffffa94ec81a 
+on database directory /home/ryan/Downloads/apache-ofbiz-12.04.02/runtime/data/derby/ofbizolap  with class loader org.ofbiz.base.start.Classpath$NativeLibClassLoader@1cd0798 
+Loaded from file:/home/ryan/Downloads/apache-ofbiz-12.04.02/framework/entity/lib/jdbc/derby-10.8.2.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_51-b13
+user.dir=/home/ryan/Downloads/apache-ofbiz-12.04.02
+derby.system.home=runtime/data/derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Mar 29 17:01:59 PDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance 5303838d-0145-104a-b9ab-ffffa94ec81a 
+on database directory /home/ryan/Downloads/apache-ofbiz-12.04.02/runtime/data/derby/ofbiztenant  with class loader org.ofbiz.base.start.Classpath$NativeLibClassLoader@1cd0798 
+Loaded from file:/home/ryan/Downloads/apache-ofbiz-12.04.02/framework/entity/lib/jdbc/derby-10.8.2.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_51-b13
+user.dir=/home/ryan/Downloads/apache-ofbiz-12.04.02
+derby.system.home=runtime/data/derby
+Database Class Loader started - derby.database.classpath=''
